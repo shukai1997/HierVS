@@ -10,19 +10,30 @@ HierVS is a fully AI-driven hierarchical virtual screening module. HierVS first 
 
 ## Installation
 
-> Note: we recommend installing boltz in a fresh python environment
+> Download the docker image
 
 Install boltz with PyPI (recommended):
 
 ```
-pip install boltz -U
+wget https://huggingface.co/gushukai/HierVS/resolve/main/hier_vs_v8.tar
 ```
 
-or directly from GitHub for daily updates:
+or 
 
 ```
-git clone https://github.com/jwohlwend/boltz.git
-cd boltz; pip install -e .
+wget https://zenodo.org/records/15860229/files/hier_vs_v8.tar
+```
+
+> Deploy the docker
+
+```
+docker load -i hier_vs_v8.tar
+```
+
+> Install HierVS package
+
+```
+pip install HierVS
 ```
 
 ## Inference
