@@ -12,8 +12,6 @@ HierVS is a fully AI-driven hierarchical virtual screening module. HierVS first 
 
 > Download the docker image
 
-Install boltz with PyPI (recommended):
-
 ```
 wget https://huggingface.co/gushukai/HierVS/resolve/main/hier_vs_v8.tar
 ```
@@ -24,7 +22,7 @@ or
 wget https://zenodo.org/records/15860229/files/hier_vs_v8.tar
 ```
 
-> Deploy the docker
+> Deploy the docker image
 
 ```
 docker load -i hier_vs_v8.tar
@@ -36,14 +34,19 @@ docker load -i hier_vs_v8.tar
 pip install HierVS
 ```
 
-## Inference
+## Virtual screening
 
-You can run inference using Boltz with:
+You can conduct virtual screening using HierVS with:
 
 ```
-boltz predict input_path --use_msa_server
+HierVS -p protein_file_path -l ligand_file_path -cl compound_library_file_path -o output_path -n TopN
 ```
 
-`input_path` should point to a YAML file, or a directory of YAML files for batched processing, describing the biomolecules you want to model and the properties you want to predict (e.g. affinity). To see all available options: `boltz predict --help` and for more information on these input formats, see our [prediction instructions](docs/prediction.md). By default, the `boltz` command will run the latest version of the model.
+`protein_file_path` should point to the protein file (PDB); 
+`ligand_file_path` should point to the reference ligand file (sdf or mol2);
+`compound_library_file_path` should point to the compound library file (txt); 
+`output_path` should point to the output file path;
+`n` should point to the number of molecules for CarsiDock and RTMScore; 
+`HierVS --help` and for more information on these input formats.
 
 
