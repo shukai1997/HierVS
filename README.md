@@ -1,13 +1,12 @@
-# VSDS-VD: benchmarking AI-powered docking methods from the perspective of virtual screening
+# HierVS: a fully AI-driven hierarchical virtual screening module.
 
-![](https://github.com/shukai1997/HierVS/blob/main/func4.jpg)
+![](https://github.com/shukai1997/HierVS/blob/main/func4.jpeg)
 
 
 ## Introduction
 
-Boltz is a family of models for biomolecular interaction prediction. Boltz-1 was the first fully open source model to approach AlphaFold3 accuracy. Our latest work Boltz-2 is a new biomolecular foundation model that goes beyond AlphaFold3 and Boltz-1 by jointly modeling complex structures and binding affinities, a critical component towards accurate molecular design. Boltz-2 is the first deep learning model to approach the accuracy of physics-based free-energy perturbation (FEP) methods, while running 1000x faster — making accurate in silico screening practical for early-stage drug discovery.
+HierVS is a fully AI-driven hierarchical virtual screening module. HierVS first employs KarmaDock for efficient docking, followed by CarsiDock for accurate docking and RTMscore for re-scoring. HierVS facilitates straightforward local deployment and execution, with dynamically adjustable virtual screening duration based on the  setting of precise-docked molecular quantities.
 
-All the code and weights are provided under MIT license, making them freely available for both academic and commercial uses. For more information about the model, see the [Boltz-1](https://doi.org/10.1101/2024.11.19.624167) and [Boltz-2](https://doi.org/10.1101/2025.06.14.659707) technical reports. To discuss updates, tools and applications join our [Slack channel](https://join.slack.com/t/boltz-community/shared_invite/zt-37uc4m8t2-gbbph6ka704ORcDCHLlFKg).
 
 ## Installation
 
