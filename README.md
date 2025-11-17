@@ -13,7 +13,7 @@ HierVS is a fully AI-driven hierarchical virtual screening module. HierVS first 
 > Download the docker image
 
 ```
-wget https://huggingface.co/gushukai/HierVS/resolve/main/hier_vs_v8.tar
+wget https://huggingface.co/gushukai/HierVS/resolve/main/hier_vs_v9.tar.gz
 ```
 
 or 
