@@ -7,6 +7,20 @@
 
 HierVS is a fully AI-driven hierarchical virtual screening module. HierVS first employs KarmaDock for efficient docking, followed by CarsiDock for accurate docking and RTMscore for re-scoring. HierVS facilitates straightforward local deployment and execution, with dynamically adjustable virtual screening duration based on the  setting of precise-docked molecular quantities.
 
+## System Requirements
+
+| Component | Specification |
+|-----------|---------------|
+| **Operating System** | Ubuntu 22.04.5 |
+| **Processor** | Intel(R) Core(TM) i9-14900KF |
+| **GPU** | NVIDIA GeForce RTX 4090 |
+| **Storage** | Minimum 24 GB of available hard-disk space |
+| **CUDA** | Version 12.4 |
+| **NVIDIA GPU Driver** | Version 550.144.03 |
+| **Docker** | Version 28.0.1 |
+| **Package Management** | PyPI (Python package management tool) |
+
+
 
 ## Installation
 
