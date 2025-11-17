@@ -20,29 +20,31 @@ HierVS is a fully AI-driven hierarchical virtual screening module. HierVS first 
 | **Docker** | Version 28.0.1 |
 | **Package Management** | PyPI (Python package management tool) |
 
-
+*The software and hardware listed above are recommended, as our testing was conducted in this environment. Other software or hardware configurations may also be capable of running this tool properly.*
 
 ## Installation
 
-> Download the docker image
+### 📥 Step 1: Download Docker Image
+*(Download time depends on your network speed)*
 
-```
+Choose one of the following download sources:
+
+**Option A - Hugging Face:**
+```bash
 wget https://huggingface.co/gushukai/HierVS/resolve/main/hier_vs_v9.tar.gz
-```
 
-or 
-
-```
+**Option B - Zenodo:**
+```bash
 wget https://zenodo.org/records/15860229/files/hier_vs_v8.tar
-```
 
-> Deploy the docker image
+
+> Deploy the docker image (several seconds to minutes)
 
 ```
 docker load -i hier_vs_v8.tar
 ```
 
-> Install HierVS package
+> Install HierVS package (several seconds)
 
 ```
 pip install HierVS
