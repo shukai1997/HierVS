@@ -54,17 +54,32 @@ pip install HierVS
 
 ## Virtual screening
 
-You can conduct virtual screening using HierVS with:
+Virtual screening can be performed using HierVS with the following command:
 
 ```
-HierVS -p protein_file_path -l ligand_file_path -cl compound_library_file_path -o output_path -n TopN
+HierVS -p protein_file -l ligand_file -cl compound_library_file -o output_path -n TopN -v IMAGE_VERSION
 ```
 
-`protein_file_path` should point to the protein file (PDB); 
-`ligand_file_path` should point to the reference ligand file (sdf or mol2);
-`compound_library_file_path` should point to the compound library file (txt); 
-`output_path` should point to the output file path;
-`n` should point to the number of molecules for CarsiDock and RTMScore; 
-`HierVS --help` and for more information on these input formats.
 
+
+-p protein_file: Path to the protein structure file (PDB format)
+
+-l ligand_file: Path to the reference ligand file (SDF or MOL2 format)
+
+-cl compound_library_file: Path to the compound library file (TXT format)
+
+-o output_path: Path to the output directory
+
+-n TopN: Number of top molecules for CarsiDock and RTMScore
+
+-v IMAGE_VERSION: Docker image version (default: hier_vs:v9)
+
+example:
+```
+HierVS -p ./examples/example_protein.pdb -l ./examples/example_ligand.sdf -cl ./examples/example_compound_library.txt -o ./examples/result -n 50 -v hier_vs:v9
+```
+expected result: 
+karmadock_prediction.csv 包含karmadock预测的结果
+carsidock_prediction.csv 包含基于carsidock对接构象，rtmscore重打分的结果
+sdf文件： carsidock对接的构象
 
