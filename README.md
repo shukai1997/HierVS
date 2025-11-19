@@ -27,7 +27,6 @@ HierVS is a fully AI-driven hierarchical virtual screening module. HierVS first 
 ###  Step 1: Download Docker Image
 *(Download time depends on your network speed)*
 
-Choose one of the following download sources:
 
 **Hugging Face:**
 ```
