@@ -72,6 +72,8 @@ HierVS -p protein_file -l ligand_file -cl compound_library_file -o output_path -
 ```
 HierVS -p ./examples/example_protein.pdb -l ./examples/example_ligand.sdf -cl ./examples/example_compound_library.txt -o ./examples/result -n 50 -v hier_vs:v9
 ```
+Note: In the CarsiDock molecular docking pipeline, a known issue in specific versions of RDKit can, on rare occasions, cause a segmentation fault during the generation of initial molecular conformations, leading to an unexpected termination of the screening task. In the event of this error, the Docker image should be switched to hier_vs:v9b, which contains an upgraded version of RDKit to resolve this problem.
+
 
 ### Expected results:
 karmadock_prediction.csv: Contains KarmaDock prediction results
