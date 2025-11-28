@@ -76,7 +76,7 @@ HierVS -p ./examples/example_protein.pdb -l ./examples/example_ligand.sdf -cl ./
 > 
 > In the CarsiDock molecular docking pipeline, a known issue in specific versions of RDKit can, on rare occasions, cause a segmentation fault during the generation of initial molecular conformations. This may lead to unexpected termination of the screening task.
 > 
-> **Recommended Solution**: If you encounter this error, please switch the Docker image to **`hier_vs:v9b`**. This version contains an upgraded RDKit installation that specifically resolves this stability issue.
+> **Recommended Solution**: If you encounter this error, please switch the Docker image to **`hier_vs:v9b`**. This version contains an upgraded RDKit installation that specifically resolves this stability issue. Prior to use, first download and deploy the image using wget https://huggingface.co/gushukai/HierVS/resolve/main/hier_vs_v9b.tar and docker load -i hier_vs_v9b.tar.
 > 
 > ⚠️ **Key Change**: `hier_vs:v9` → **`hier_vs:v9b`**
 
