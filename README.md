@@ -21,6 +21,8 @@ HierVS is a fully AI-driven hierarchical virtual screening module. HierVS first 
 | **Package Management** | PyPI (Python package management tool) |
 
 *The software and hardware listed above are recommended, as our testing was conducted in this environment. Other software or hardware configurations may also be capable of running this tool properly.*
+
+
 *In addition to the System Requirements mentioned aboved, Ubuntu24.04 and Ubuntu20.04, CUDA	Version 12.8 cooperated with NVIDIA GPU DriverVersion 570.133.07 and CUDA Version 11.4 cooperated with NVIDIA GPU Driver Version 470.82.01 have been verified and confirmed to work without issues.*
 
 ## Installation
